@@ -37,14 +37,17 @@ A = np.array([1, -1])
 B = np.array([-4, 6])
 C = np.array([-3, -5])
 H = np.array([17 / 6, -5 / 6])
+X = np.array([-203/61, -85/61])
 
 #Generating all lines
 x_AH = line_gen(A,H)
 x_BC = line_gen(B,C)
+x_AX = line_gen(A,X)
 
 #Plotting all lines
 plt.plot(x_AH[0,:],x_AH[1,:],label='$AH$')
 plt.plot(x_BC[0,:],x_BC[1,:],label='$BC$')
+plt.plot(x_AX[0,:],x_AX[1,:],linestyle='dotted',label='$AX$')
 
 A = A.reshape(-1,1)
 B = B.reshape(-1,1)
