@@ -33,11 +33,7 @@ from conics.funcs import circ_gen
 
 import subprocess
 import shlex
-A = np.array([1, -1])
-B = np.array([-4, 6])
-C = np.array([-3, -5])
-H = np.array([17 / 6, -5 / 6])
-X = np.array([-203/61, -85/61])
+X = np.array([-203/61, -85/61]     #X is point of intersection of line AH and BC
 
 #Generating all lines
 x_AH = line_gen(A,H)
